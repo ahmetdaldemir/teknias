@@ -102,15 +102,4 @@
 - Purchase işlemi ile satın alma işlemi yapılarak veri tabanına (id, u_id, receipt, status, expire_date) kaydedilmektedir.
 - Check Subscription işlemi ile de client_token üzerinden sorgulama yapılarak kullanıcının satın alma geçmişi görüntülenmektedir.
 
-## Yapılan Teknik Koşullar
-
-```bash
-- Her appin iOS ve Google credential bilgileri farklıdır.
-- DB şeması, sql dosyası ve migration olarak verilmiştir. 
-- DB tablolarının özellikle device tablosunun milyonlarca 
-  kayıt altında çalışması beklenmektedir. 
-- API tarafında bir çok farklı appten aynı anda HTTP istekler 
-  gelecek yüksek trafik olacağı göz önünde bulundurulmuştur.
-- Bir device bir app altında aynı anda sadece bir aboneliği bulunabilir
-- Bir device farklı appler olmak şartı ile birden fazla aboneliği olabilir. 
-```
+ 
